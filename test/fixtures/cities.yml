@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city_code: MyText
+  city_name: MyText
+  pref_code: MyText
+  city_kana: MyText
+  city_romaji: MyText
+  city_romaji_location: MyText
+  city_lon: 1.5
+  city_lat: 1.5
+
+two:
+  city_code: MyText
+  city_name: MyText
+  pref_code: MyText
+  city_kana: MyText
+  city_romaji: MyText
+  city_romaji_location: MyText
+  city_lon: 1.5
+  city_lat: 1.5
