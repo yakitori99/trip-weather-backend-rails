@@ -1,3 +1,7 @@
+# trip-weather-backend-rails
+trip-weatherのbackend側ソースコード(Ruby on Rails版)です。
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
