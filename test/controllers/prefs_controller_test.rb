@@ -1,38 +1,21 @@
 require "test_helper"
 
 class PrefsControllerTest < ActionDispatch::IntegrationTest
-  setup do
-    @pref = prefs(:one)
-  end
 
   test "should get index" do
     get prefs_url, as: :json
+    # API戻り値をパース
+    res = JSON.parse(@response.body)
+    # 件数が正しいことを確認
+    assert_equal(res.length, 47)
+
+    # ソート順が正しいことを確認
+    # assert_equal(expected, actual, [msg])
+    assert_equal(res[0]["pref_code"] , "01")
+    assert_equal(res[12]["pref_code"] , "13")
+    assert_equal(res[46]["pref_code"], "47")
+
     assert_response :success
   end
 
-  test "should create pref" do
-    assert_difference('Pref.count') do
-      post prefs_url, params: { pref: { pref_code: @pref.pref_code, pref_name: @pref.pref_name } }, as: :json
-    end
-
-    assert_response 201
-  end
-
-  test "should show pref" do
-    get pref_url(@pref), as: :json
-    assert_response :success
-  end
-
-  test "should update pref" do
-    patch pref_url(@pref), params: { pref: { pref_code: @pref.pref_code, pref_name: @pref.pref_name } }, as: :json
-    assert_response 200
-  end
-
-  test "should destroy pref" do
-    assert_difference('Pref.count', -1) do
-      delete pref_url(@pref), as: :json
-    end
-
-    assert_response 204
-  end
 end

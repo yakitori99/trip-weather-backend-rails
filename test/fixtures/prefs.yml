@@ -1,9 +1,237 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  pref_code: MyText
-  pref_name: MyText
-
-two:
-  pref_code: MyText
-  pref_name: MyText
+id1:
+  pref_code: '01'
+  pref_name: 北海道
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id2:
+  pref_code: '02'
+  pref_name: 青森県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id3:
+  pref_code: '03'
+  pref_name: 岩手県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id4:
+  pref_code: '04'
+  pref_name: 宮城県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id5:
+  pref_code: '05'
+  pref_name: 秋田県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id6:
+  pref_code: '06'
+  pref_name: 山形県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id7:
+  pref_code: '07'
+  pref_name: 福島県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id8:
+  pref_code: '08'
+  pref_name: 茨城県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id9:
+  pref_code: '09'
+  pref_name: 栃木県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id10:
+  pref_code: '10'
+  pref_name: 群馬県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id11:
+  pref_code: '11'
+  pref_name: 埼玉県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id12:
+  pref_code: '12'
+  pref_name: 千葉県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id13:
+  pref_code: '13'
+  pref_name: 東京都
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id14:
+  pref_code: '14'
+  pref_name: 神奈川県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id15:
+  pref_code: '15'
+  pref_name: 新潟県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id16:
+  pref_code: '16'
+  pref_name: 富山県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id17:
+  pref_code: '17'
+  pref_name: 石川県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id18:
+  pref_code: '18'
+  pref_name: 福井県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id19:
+  pref_code: '19'
+  pref_name: 山梨県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id20:
+  pref_code: '20'
+  pref_name: 長野県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id21:
+  pref_code: '21'
+  pref_name: 岐阜県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id22:
+  pref_code: '22'
+  pref_name: 静岡県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id23:
+  pref_code: '23'
+  pref_name: 愛知県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id24:
+  pref_code: '24'
+  pref_name: 三重県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id25:
+  pref_code: '25'
+  pref_name: 滋賀県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id26:
+  pref_code: '26'
+  pref_name: 京都府
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id27:
+  pref_code: '27'
+  pref_name: 大阪府
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id28:
+  pref_code: '28'
+  pref_name: 兵庫県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id29:
+  pref_code: '29'
+  pref_name: 奈良県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id30:
+  pref_code: '30'
+  pref_name: 和歌山県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id31:
+  pref_code: '31'
+  pref_name: 鳥取県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id32:
+  pref_code: '32'
+  pref_name: 島根県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id33:
+  pref_code: '33'
+  pref_name: 岡山県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id34:
+  pref_code: '34'
+  pref_name: 広島県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id35:
+  pref_code: '35'
+  pref_name: 山口県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id36:
+  pref_code: '36'
+  pref_name: 徳島県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id37:
+  pref_code: '37'
+  pref_name: 香川県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id38:
+  pref_code: '38'
+  pref_name: 愛媛県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id39:
+  pref_code: '39'
+  pref_name: 高知県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id40:
+  pref_code: '40'
+  pref_name: 福岡県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id41:
+  pref_code: '41'
+  pref_name: 佐賀県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id42:
+  pref_code: '42'
+  pref_name: 長崎県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id43:
+  pref_code: '43'
+  pref_name: 熊本県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id44:
+  pref_code: '44'
+  pref_name: 大分県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id45:
+  pref_code: '45'
+  pref_name: 宮崎県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id46:
+  pref_code: '46'
+  pref_name: 鹿児島県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id47:
+  pref_code: '47'
+  pref_name: 沖縄県
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
