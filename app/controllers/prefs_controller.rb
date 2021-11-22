@@ -2,7 +2,7 @@ class PrefsController < ApplicationController
   # GET
   def get_pref_all
     @prefs = Pref.all.order('pref_code ASC')
-    # jbuilderを用いて列の限定やレンダリングを行う。よって、以下のrenderは使わない
+    # jbuilderを用いてjsonの整形・レンダリングを行うため、以下のrenderは使わない
     # render json: @prefs
   end
 
