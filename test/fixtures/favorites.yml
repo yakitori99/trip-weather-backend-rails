@@ -6,16 +6,16 @@ id1:
   from_city_code: '270000'
   to_pref_code: '13'
   to_city_code: '130010'
-  created_at: '2021-09-12 22:01:13'
-  updated_at: '2021-09-12 22:01:13'
+  created_at: '2021-09-12 22:01:11'
+  updated_at: '2021-09-12 22:01:11'
 id2:
-  nickname:
+  nickname: ""
   from_pref_code: '01'
   from_city_code: '011000'
   to_pref_code: '02'
   to_city_code: '020010'
-  created_at: '2021-09-12 22:01:13'
-  updated_at: '2021-09-12 22:01:13'
+  created_at: '2021-09-12 22:01:12'
+  updated_at: '2021-09-12 22:01:12'
 id3:
   nickname: ryo
   from_pref_code: '13'
@@ -25,15 +25,15 @@ id3:
   created_at: '2021-09-12 22:01:13'
   updated_at: '2021-09-12 22:01:13'
 id4:
-  nickname:
+  nickname: ""
   from_pref_code: '04'
   from_city_code: '040010'
   to_pref_code: '40'
   to_city_code: '400010'
-  created_at: '2021-09-12 22:01:13'
-  updated_at: '2021-09-12 22:01:13'
+  created_at: '2021-09-12 22:01:14'
+  updated_at: '2021-09-12 22:01:14'
 id5:
-  nickname:
+  nickname: ""
   from_pref_code: '17'
   from_city_code: '170010'
   to_pref_code: '18'

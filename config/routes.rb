@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     get 'datetimes' => 'datetimes#get_datetimes'
 
     get 'nicknames' => 'favorites#get_nicknames'
+    get '/favorites/by/:nickname' => 'favorites#get_favorites_by_nickname'
     
   end
 end
