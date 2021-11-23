@@ -12,13 +12,13 @@ class CitiesControllerTest < ActionDispatch::IntegrationTest
 
     # ソート順が正しいことを確認
     # assert_equal(expected, actual, [msg])
-    assert_equal(res[0]["CityCode"] , "011000")
-    assert_equal(res[45]["CityCode"] , "130010")
-    assert_equal(res[141]["CityCode"], "474020")
+    assert_equal("011000", res[0]["CityCode"])
+    assert_equal("130010", res[45]["CityCode"])
+    assert_equal("474020", res[141]["CityCode"])
     # 値を確認
-    assert_equal(res[45]["CityName"], "東京")
-    assert_equal(res[45]["CityLon"], 139.691711)
-    assert_equal(res[45]["CityLat"], 35.689499)
+    assert_equal("東京", res[45]["CityName"])
+    assert_equal(139.691711, res[45]["CityLon"])
+    assert_equal(35.689499,  res[45]["CityLat"])
 
     assert_response :success
   end

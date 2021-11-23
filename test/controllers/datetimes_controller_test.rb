@@ -9,7 +9,7 @@ class DatetimesControllerTest < ActionDispatch::IntegrationTest
     p(res)
 
     # 件数が正しいことを確認
-    assert_equal(res.length, 9)
+    assert_equal(9, res.length)
 
     assert_response :success
   end
