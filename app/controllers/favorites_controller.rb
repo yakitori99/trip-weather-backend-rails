@@ -1,6 +1,13 @@
 class FavoritesController < ApplicationController
   before_action :set_favorite, only: [:show, :update, :destroy]
 
+
+  # favoritesテーブルから重複しないニックネーム一覧を取得し、ニックネームの昇順で返す
+  def get_nicknames
+    @favorites = Favorite.select(:nickname).distinct.order('nickname ASC')
+    # jbuilderを用いてjsonの整形・レンダリングを行う
+  end
+
   # GET /favorites
   def index
     @favorites = Favorite.all

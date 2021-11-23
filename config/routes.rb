@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     
     get 'datetimes' => 'datetimes#get_datetimes'
 
-    resources :favorites
+    get 'nicknames' => 'favorites#get_nicknames'
     
   end
 end

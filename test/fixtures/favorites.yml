@@ -1,15 +1,50 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  nickname: MyText
-  from_pref_code: MyText
-  from_city_code: MyText
-  to_pref_code: MyText
-  to_city_code: MyText
-
-two:
-  nickname: MyText
-  from_pref_code: MyText
-  from_city_code: MyText
-  to_pref_code: MyText
-  to_city_code: MyText
+id1:
+  nickname: ryo
+  from_pref_code: '27'
+  from_city_code: '270000'
+  to_pref_code: '13'
+  to_city_code: '130010'
+  created_at: '2021-09-12 22:01:13'
+  updated_at: '2021-09-12 22:01:13'
+id2:
+  nickname:
+  from_pref_code: '01'
+  from_city_code: '011000'
+  to_pref_code: '02'
+  to_city_code: '020010'
+  created_at: '2021-09-12 22:01:13'
+  updated_at: '2021-09-12 22:01:13'
+id3:
+  nickname: ryo
+  from_pref_code: '13'
+  from_city_code: '130010'
+  to_pref_code: '01'
+  to_city_code: '016010'
+  created_at: '2021-09-12 22:01:13'
+  updated_at: '2021-09-12 22:01:13'
+id4:
+  nickname:
+  from_pref_code: '04'
+  from_city_code: '040010'
+  to_pref_code: '40'
+  to_city_code: '400010'
+  created_at: '2021-09-12 22:01:13'
+  updated_at: '2021-09-12 22:01:13'
+id5:
+  nickname:
+  from_pref_code: '17'
+  from_city_code: '170010'
+  to_pref_code: '18'
+  to_city_code: '180010'
+  created_at: '2021-09-21 02:58:30'
+  updated_at: '2021-09-21 02:58:30'
+id6:
+  nickname: たなか
+  from_pref_code: '13'
+  from_city_code: '130010'
+  to_pref_code: '13'
+  to_city_code: '130010'
+  created_at: '2021-09-21 02:58:30'
+  updated_at: '2021-09-21 02:58:30'
