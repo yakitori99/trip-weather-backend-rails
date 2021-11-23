@@ -1,21 +1,1564 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  city_code: MyText
-  city_name: MyText
-  pref_code: MyText
-  city_kana: MyText
-  city_romaji: MyText
-  city_romaji_location: MyText
-  city_lon: 1.5
-  city_lat: 1.5
-
-two:
-  city_code: MyText
-  city_name: MyText
-  pref_code: MyText
-  city_kana: MyText
-  city_romaji: MyText
-  city_romaji_location: MyText
-  city_lon: 1.5
-  city_lat: 1.5
+id1:
+  city_code: '011000'
+  city_name: 稚内
+  pref_code: '01'
+  city_kana: ワッカナイ
+  city_romaji: Wakkanai
+  city_romaji_location: Wakkanai
+  city_lon: '141.673889'
+  city_lat: '45.409439'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id2:
+  city_code: '012010'
+  city_name: 旭川
+  pref_code: '01'
+  city_kana: アサヒカワ
+  city_romaji: Asahikawa
+  city_romaji_location: Asahikawa
+  city_lon: '142.370285'
+  city_lat: '43.76778'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id3:
+  city_code: '012020'
+  city_name: 留萌
+  pref_code: '01'
+  city_kana: ルモイ
+  city_romaji: Rumoi
+  city_romaji_location: Rumoi
+  city_lon: '141.642776'
+  city_lat: '43.934441'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id4:
+  city_code: '013010'
+  city_name: 網走
+  pref_code: '01'
+  city_kana: アバシリ
+  city_romaji: Abashiri
+  city_romaji_location: Abashiri
+  city_lon: '144.269714'
+  city_lat: '44.021271'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id5:
+  city_code: '013020'
+  city_name: 北見
+  pref_code: '01'
+  city_kana: キタミ
+  city_romaji: Kitami
+  city_romaji_location: Kitami
+  city_lon: '143.890823'
+  city_lat: '43.803059'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id6:
+  city_code: '013030'
+  city_name: 紋別
+  pref_code: '01'
+  city_kana: モンベツ
+  city_romaji: Mombetsu
+  city_romaji_location: Mombetsu
+  city_lon: '143.352493'
+  city_lat: '44.352501'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id7:
+  city_code: '014010'
+  city_name: 根室
+  pref_code: '01'
+  city_kana: ネムロ
+  city_romaji: Nemuro
+  city_romaji_location: Nemuro
+  city_lon: '145.574997'
+  city_lat: '43.323608'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id8:
+  city_code: '014020'
+  city_name: 釧路
+  pref_code: '01'
+  city_kana: クシロ
+  city_romaji: Kushiro
+  city_romaji_location: Kushiro
+  city_lon: '144.374725'
+  city_lat: '42.974998'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id9:
+  city_code: '014030'
+  city_name: 帯広
+  pref_code: '01'
+  city_kana: オビヒロ
+  city_romaji: Obihiro
+  city_romaji_location: Obihiro
+  city_lon: '143.204437'
+  city_lat: '42.917221'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id10:
+  city_code: '015010'
+  city_name: 室蘭
+  pref_code: '01'
+  city_kana: ムロラン
+  city_romaji: Muroran
+  city_romaji_location: Muroran
+  city_lon: '140.988068'
+  city_lat: '42.317219'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id11:
+  city_code: '015020'
+  city_name: 浦河
+  pref_code: '01'
+  city_kana: ウラカワ
+  city_romaji: Urakawa
+  city_romaji_location: Urakawa
+  city_lon: '142.783615'
+  city_lat: '42.15556'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id12:
+  city_code: '016010'
+  city_name: 札幌
+  pref_code: '01'
+  city_kana: サッポロ
+  city_romaji: Sapporo
+  city_romaji_location: Sapporo
+  city_lon: '141.346939'
+  city_lat: '43.064171'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id13:
+  city_code: '016020'
+  city_name: 岩見沢
+  pref_code: '01'
+  city_kana: イワミザワ
+  city_romaji: Iwamizawa
+  city_romaji_location: Iwamizawa
+  city_lon: '141.75972'
+  city_lat: '43.200279'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id14:
+  city_code: '016030'
+  city_name: 倶知安
+  pref_code: '01'
+  city_kana: クッチャン
+  city_romaji: Kutchan
+  city_romaji_location: Kutchan
+  city_lon: '140.740555'
+  city_lat: '42.901112'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id15:
+  city_code: '017010'
+  city_name: 函館
+  pref_code: '01'
+  city_kana: ハコダテ
+  city_romaji: Hakodate
+  city_romaji_location: Hakodate
+  city_lon: '140.736664'
+  city_lat: '41.775829'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id16:
+  city_code: '017020'
+  city_name: 江差
+  pref_code: '01'
+  city_kana: エサシ
+  city_romaji: Esashi
+  city_romaji_location: Esashi
+  city_lon: '140.127444'
+  city_lat: '41.869139'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id17:
+  city_code: '020010'
+  city_name: 青森
+  pref_code: '02'
+  city_kana: アオモリ
+  city_romaji: Aomori
+  city_romaji_location: Aomori
+  city_lon: '140.740005'
+  city_lat: '40.82444'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id18:
+  city_code: '020020'
+  city_name: むつ
+  pref_code: '02'
+  city_kana: ムツ
+  city_romaji: Mutsu
+  city_romaji_location: Mutsu
+  city_lon: '141.216934'
+  city_lat: '41.28944'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id19:
+  city_code: '020030'
+  city_name: 八戸
+  pref_code: '02'
+  city_kana: ハチノヘ
+  city_romaji: Hachinohe
+  city_romaji_location: Hachinohe
+  city_lon: '141.491943'
+  city_lat: '40.505001'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id20:
+  city_code: '030010'
+  city_name: 盛岡
+  pref_code: '03'
+  city_kana: モリオカ
+  city_romaji: Morioka
+  city_romaji_location: Morioka
+  city_lon: '141.152496'
+  city_lat: '39.703609'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id21:
+  city_code: '030020'
+  city_name: 宮古
+  pref_code: '03'
+  city_kana: ミヤコ
+  city_romaji: Miyako
+  city_romaji_location: Miyako
+  city_lon: '141.952499'
+  city_lat: '39.636669'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id22:
+  city_code: '030030'
+  city_name: 大船渡
+  pref_code: '03'
+  city_kana: オオフナト
+  city_romaji: Ofunato
+  city_romaji_location: Ōfunato
+  city_lon: '141.716675'
+  city_lat: '39.071671'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id23:
+  city_code: '040010'
+  city_name: 仙台
+  pref_code: '04'
+  city_kana: センダイ
+  city_romaji: Sendai
+  city_romaji_location: Sendai
+  city_lon: '140.871933'
+  city_lat: '38.26889'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id24:
+  city_code: '040020'
+  city_name: 白石
+  pref_code: '04'
+  city_kana: シライシ
+  city_romaji: Shiraishi
+  city_romaji_location: Shiroishi
+  city_lon: '140.618332'
+  city_lat: '38.00333'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id25:
+  city_code: '050010'
+  city_name: 秋田
+  pref_code: '05'
+  city_kana: アキタ
+  city_romaji: Akita
+  city_romaji_location: Akita
+  city_lon: '140.116669'
+  city_lat: '39.716671'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id26:
+  city_code: '050020'
+  city_name: 横手
+  pref_code: '05'
+  city_kana: ヨコテ
+  city_romaji: Yokote
+  city_romaji_location: Yokote
+  city_lon: '140.566666'
+  city_lat: '39.299999'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id27:
+  city_code: '060010'
+  city_name: 山形
+  pref_code: '06'
+  city_kana: ヤマガタ
+  city_romaji: Yamagata
+  city_romaji_location: Yamagata
+  city_lon: '140.363327'
+  city_lat: '38.240559'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id28:
+  city_code: '060020'
+  city_name: 米沢
+  pref_code: '06'
+  city_kana: ヨネザワ
+  city_romaji: Yonezawa
+  city_romaji_location: Yonezawa
+  city_lon: '140.116669'
+  city_lat: '37.916672'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id29:
+  city_code: '060030'
+  city_name: 酒田
+  pref_code: '06'
+  city_kana: サカタ
+  city_romaji: Sakata
+  city_romaji_location: Sakata
+  city_lon: '139.854996'
+  city_lat: '38.916672'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id30:
+  city_code: '060040'
+  city_name: 新庄
+  pref_code: '06'
+  city_kana: シンジョウ
+  city_romaji: Shinjo
+  city_romaji_location: Shinjō
+  city_lon: '140.300827'
+  city_lat: '38.75861'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id31:
+  city_code: '070010'
+  city_name: 福島
+  pref_code: '07'
+  city_kana: フクシマ
+  city_romaji: Fukushima
+  city_romaji_location: Fukushima
+  city_lon: '140.467773'
+  city_lat: '37.75'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id32:
+  city_code: '070020'
+  city_name: 小名浜
+  pref_code: '07'
+  city_kana: オナハマ
+  city_romaji: Onahama
+  city_romaji_location: Iwaki
+  city_lon: '140.883331'
+  city_lat: '37.049999'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id33:
+  city_code: '070030'
+  city_name: 若松
+  pref_code: '07'
+  city_kana: ワカマツ
+  city_romaji: Wakamatsu
+  city_romaji_location: Kitakata
+  city_lon: '139.866669'
+  city_lat: '37.650002'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id34:
+  city_code: '080010'
+  city_name: 水戸
+  pref_code: '08'
+  city_kana: ミト
+  city_romaji: Mito
+  city_romaji_location: Mito
+  city_lon: '140.446671'
+  city_lat: '36.341389'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id35:
+  city_code: '080020'
+  city_name: 土浦
+  pref_code: '08'
+  city_kana: ツチウラ
+  city_romaji: Tsuchiura
+  city_romaji_location: Tsuchiura
+  city_lon: '140.210464'
+  city_lat: '36.090469'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id36:
+  city_code: '090010'
+  city_name: 宇都宮
+  pref_code: '09'
+  city_kana: ウツノミヤ
+  city_romaji: Utsunomiya
+  city_romaji_location: Utsunomiya
+  city_lon: '139.883606'
+  city_lat: '36.56583'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id37:
+  city_code: '090020'
+  city_name: 大田原
+  pref_code: '09'
+  city_kana: オオタワラ
+  city_romaji: Otawara
+  city_romaji_location: Ōtawara
+  city_lon: '140.033325'
+  city_lat: '36.866669'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id38:
+  city_code: '100010'
+  city_name: 前橋
+  pref_code: '10'
+  city_kana: マエバシ
+  city_romaji: Maebashi
+  city_romaji_location: Maebashi
+  city_lon: '139.060837'
+  city_lat: '36.391109'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id39:
+  city_code: '100020'
+  city_name: みなかみ
+  pref_code: '10'
+  city_kana: ミナカミ
+  city_romaji: Minakami
+  city_romaji_location: Numata
+  city_lon: '139.050003'
+  city_lat: '36.633331'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id40:
+  city_code: '110010'
+  city_name: さいたま
+  pref_code: '11'
+  city_kana: サイタマ
+  city_romaji: Saitama
+  city_romaji_location: Saitama
+  city_lon: '139.65657'
+  city_lat: '35.90807'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id41:
+  city_code: '110020'
+  city_name: 熊谷
+  pref_code: '11'
+  city_kana: クマガイ
+  city_romaji: Kumagai
+  city_romaji_location: Kumagaya
+  city_lon: '139.383331'
+  city_lat: '36.133331'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id42:
+  city_code: '110030'
+  city_name: 秩父
+  pref_code: '11'
+  city_kana: チチブ
+  city_romaji: Chichibu
+  city_romaji_location: Chichibu
+  city_lon: '139.076385'
+  city_lat: '35.99028'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id43:
+  city_code: '120010'
+  city_name: 千葉
+  pref_code: '12'
+  city_kana: チバ
+  city_romaji: Chiba
+  city_romaji_location: Chiba
+  city_lon: '140.123337'
+  city_lat: '35.604721'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id44:
+  city_code: '120020'
+  city_name: 銚子
+  pref_code: '12'
+  city_kana: チョウシ
+  city_romaji: Choshi
+  city_romaji_location: Hasaki
+  city_lon: '140.833328'
+  city_lat: '35.73333'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id45:
+  city_code: '120030'
+  city_name: 館山
+  pref_code: '12'
+  city_kana: タテヤマ
+  city_romaji: Tateyama
+  city_romaji_location: Tateyama
+  city_lon: '139.866669'
+  city_lat: '34.98333'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id46:
+  city_code: '130010'
+  city_name: 東京
+  pref_code: '13'
+  city_kana: トウキョウ
+  city_romaji: Tokyo
+  city_romaji_location: Tokyo
+  city_lon: '139.691711'
+  city_lat: '35.689499'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id47:
+  city_code: '130020'
+  city_name: 大島
+  pref_code: '13'
+  city_kana: オオシマ
+  city_romaji: Oshima
+  city_romaji_location: Okata
+  city_lon: '139.383331'
+  city_lat: '34.783329'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id48:
+  city_code: '130030'
+  city_name: 八丈島
+  pref_code: '13'
+  city_kana: ハチジョウジマ
+  city_romaji: Hachijojima
+  city_romaji_location: Ōkagō
+  city_lon: '139.783325'
+  city_lat: '33.099998'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id49:
+  city_code: '130040'
+  city_name: 父島
+  pref_code: '13'
+  city_kana: チチジマ
+  city_romaji: Chichijima
+  city_romaji_location: Chichijima
+  city_lon: '142.216667'
+  city_lat: '27.077778'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id50:
+  city_code: '140010'
+  city_name: 横浜
+  pref_code: '14'
+  city_kana: ヨコハマ
+  city_romaji: Yokohama
+  city_romaji_location: Yokohama
+  city_lon: '139.642502'
+  city_lat: '35.447781'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id51:
+  city_code: '140020'
+  city_name: 小田原
+  pref_code: '14'
+  city_kana: オダワラ
+  city_romaji: Odawara
+  city_romaji_location: Odawara
+  city_lon: '139.159714'
+  city_lat: '35.255562'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id52:
+  city_code: '150010'
+  city_name: 新潟
+  pref_code: '15'
+  city_kana: ニイガタ
+  city_romaji: Niigata
+  city_romaji_location: Niigata
+  city_lon: '139.023605'
+  city_lat: '37.902222'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id53:
+  city_code: '150020'
+  city_name: 長岡
+  pref_code: '15'
+  city_kana: ナガオカ
+  city_romaji: Nagaoka
+  city_romaji_location: Nagaoka
+  city_lon: '138.850006'
+  city_lat: '37.450001'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id54:
+  city_code: '150030'
+  city_name: 高田
+  pref_code: '15'
+  city_kana: タカダ
+  city_romaji: Takada
+  city_romaji_location: Jōetsu
+  city_lon: '138.23642'
+  city_lat: '37.148281'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id55:
+  city_code: '150040'
+  city_name: 相川
+  pref_code: '15'
+  city_kana: アイカワ
+  city_romaji: Aikawa
+  city_romaji_location: Ryōtsu-minato
+  city_lon: '138.433334'
+  city_lat: '38.083328'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id56:
+  city_code: '160010'
+  city_name: 富山
+  pref_code: '16'
+  city_kana: トヤマ
+  city_romaji: Toyama
+  city_romaji_location: Toyama
+  city_lon: '137.211395'
+  city_lat: '36.695278'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id57:
+  city_code: '160020'
+  city_name: 伏木
+  pref_code: '16'
+  city_kana: フシキ
+  city_romaji: Fushiki
+  city_romaji_location: Takaoka
+  city_lon: '137.016663'
+  city_lat: '36.75'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id58:
+  city_code: '170010'
+  city_name: 金沢
+  pref_code: '17'
+  city_kana: カナザワ
+  city_romaji: Kanazawa
+  city_romaji_location: Kanazawa
+  city_lon: '136.625565'
+  city_lat: '36.59444'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id59:
+  city_code: '170020'
+  city_name: 輪島
+  pref_code: '17'
+  city_kana: ワジマ
+  city_romaji: Wajima
+  city_romaji_location: Wajima
+  city_lon: '136.899994'
+  city_lat: '37.400002'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id60:
+  city_code: '180010'
+  city_name: 福井
+  pref_code: '18'
+  city_kana: フクイ
+  city_romaji: Fukui
+  city_romaji_location: Fukui
+  city_lon: '136.225174'
+  city_lat: '35.850101'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id61:
+  city_code: '180020'
+  city_name: 敦賀
+  pref_code: '18'
+  city_kana: ツルガ
+  city_romaji: Tsuruga
+  city_romaji_location: Tsuruga
+  city_lon: '136.055801'
+  city_lat: '35.64547'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id62:
+  city_code: '190010'
+  city_name: 甲府
+  pref_code: '19'
+  city_kana: コウフ
+  city_romaji: Kofu
+  city_romaji_location: Kōfu
+  city_lon: '138.568329'
+  city_lat: '35.663891'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id63:
+  city_code: '190020'
+  city_name: 河口湖
+  pref_code: '19'
+  city_kana: カコウミズウミ
+  city_romaji: Kakomizumi
+  city_romaji_location: Fujikawaguchiko
+  city_lon: '138.688324'
+  city_lat: '35.48933'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id64:
+  city_code: '200010'
+  city_name: 長野
+  pref_code: '20'
+  city_kana: ナガノ
+  city_romaji: Nagano
+  city_romaji_location: Nagano
+  city_lon: '138.181107'
+  city_lat: '36.65139'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id65:
+  city_code: '200020'
+  city_name: 松本
+  pref_code: '20'
+  city_kana: マツモト
+  city_romaji: Matsumoto
+  city_romaji_location: Matsumoto
+  city_lon: '137.966675'
+  city_lat: '36.23333'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id66:
+  city_code: '200030'
+  city_name: 飯田
+  pref_code: '20'
+  city_kana: イイダ
+  city_romaji: Iida
+  city_romaji_location: Iida
+  city_lon: '137.82074'
+  city_lat: '35.51965'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id67:
+  city_code: '210010'
+  city_name: 岐阜
+  pref_code: '21'
+  city_kana: ギフ
+  city_romaji: Gifu
+  city_romaji_location: Gifu
+  city_lon: '137.053986'
+  city_lat: '35.78091'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id68:
+  city_code: '210020'
+  city_name: 高山
+  pref_code: '21'
+  city_kana: タカヤマ
+  city_romaji: Takayama
+  city_romaji_location: Takayama
+  city_lon: '137.25'
+  city_lat: '36.133331'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id69:
+  city_code: '220010'
+  city_name: 静岡
+  pref_code: '22'
+  city_kana: シズオカ
+  city_romaji: Shizuoka
+  city_romaji_location: Shizuoka
+  city_lon: '138.383057'
+  city_lat: '34.97694'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id70:
+  city_code: '220020'
+  city_name: 網代
+  pref_code: '22'
+  city_kana: アジロ
+  city_romaji: Ajiro
+  city_romaji_location: Atami
+  city_lon: '139.068604'
+  city_lat: '35.089439'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id71:
+  city_code: '220030'
+  city_name: 三島
+  pref_code: '22'
+  city_kana: ミシマ
+  city_romaji: Mishima
+  city_romaji_location: Mishima
+  city_lon: '138.916672'
+  city_lat: '35.116669'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id72:
+  city_code: '220040'
+  city_name: 浜松
+  pref_code: '22'
+  city_kana: ハママツ
+  city_romaji: Hamamatsu
+  city_romaji_location: Hamamatsu
+  city_lon: '137.733337'
+  city_lat: '34.700001'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id73:
+  city_code: '230010'
+  city_name: 名古屋
+  pref_code: '23'
+  city_kana: ナゴヤ
+  city_romaji: Nagoya
+  city_romaji_location: Nagoya
+  city_lon: '136.906403'
+  city_lat: '35.181469'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id74:
+  city_code: '230020'
+  city_name: 豊橋
+  pref_code: '23'
+  city_kana: トヨハシ
+  city_romaji: Toyohashi
+  city_romaji_location: Toyohashi
+  city_lon: '137.383331'
+  city_lat: '34.76667'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id75:
+  city_code: '240010'
+  city_name: 津
+  pref_code: '24'
+  city_kana: ツ
+  city_romaji: Tsu
+  city_romaji_location: Tsu
+  city_lon: '136.508606'
+  city_lat: '34.730282'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id76:
+  city_code: '240020'
+  city_name: 尾鷲
+  pref_code: '24'
+  city_kana: オワセ
+  city_romaji: Owase
+  city_romaji_location: Owase
+  city_lon: '136.199997'
+  city_lat: '34.066669'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id77:
+  city_code: '250010'
+  city_name: 大津
+  pref_code: '25'
+  city_kana: オオツ
+  city_romaji: Otsu
+  city_romaji_location: Ōtsu
+  city_lon: '135.868332'
+  city_lat: '35.00444'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id78:
+  city_code: '250020'
+  city_name: 彦根
+  pref_code: '25'
+  city_kana: ヒコネ
+  city_romaji: Hikone
+  city_romaji_location: Hikone
+  city_lon: '136.25'
+  city_lat: '35.25'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id79:
+  city_code: '260010'
+  city_name: 京都
+  pref_code: '26'
+  city_kana: キョウト
+  city_romaji: Kyoto
+  city_romaji_location: Kyoto
+  city_lon: '135.753845'
+  city_lat: '35.021069'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id80:
+  city_code: '260020'
+  city_name: 舞鶴
+  pref_code: '26'
+  city_kana: マイヅル
+  city_romaji: Maizuru
+  city_romaji_location: Maizuru
+  city_lon: '135.333328'
+  city_lat: '35.450001'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id81:
+  city_code: '270000'
+  city_name: 大阪
+  pref_code: '27'
+  city_kana: オオサカ
+  city_romaji: Osaka
+  city_romaji_location: Osaka
+  city_lon: '135.502182'
+  city_lat: '34.693741'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id82:
+  city_code: '280010'
+  city_name: 神戸
+  pref_code: '28'
+  city_kana: コウベ
+  city_romaji: Kobe
+  city_romaji_location: Kobe
+  city_lon: '135.182999'
+  city_lat: '34.691299'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id83:
+  city_code: '280020'
+  city_name: 豊岡
+  pref_code: '28'
+  city_kana: トヨオカ
+  city_romaji: Toyoka
+  city_romaji_location: Toyooka
+  city_lon: '134.833328'
+  city_lat: '35.533329'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id84:
+  city_code: '290010'
+  city_name: 奈良
+  pref_code: '29'
+  city_kana: ナラ
+  city_romaji: Nara
+  city_romaji_location: Nara-shi
+  city_lon: '135.804855'
+  city_lat: '34.685051'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id85:
+  city_code: '290020'
+  city_name: 風屋
+  pref_code: '29'
+  city_kana: カゼヤ
+  city_romaji: Kazeya
+  city_romaji_location: Kazeya
+  city_lon: '135.781145'
+  city_lat: '34.042239'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id86:
+  city_code: '300010'
+  city_name: 和歌山
+  pref_code: '30'
+  city_kana: ワカヤマ
+  city_romaji: Wakayama
+  city_romaji_location: Wakayama
+  city_lon: '135.167496'
+  city_lat: '34.226109'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id87:
+  city_code: '300020'
+  city_name: 潮岬
+  pref_code: '30'
+  city_kana: シオノミサキ
+  city_romaji: Shionomisaki
+  city_romaji_location: Kushimoto
+  city_lon: '135.783325'
+  city_lat: '33.466671'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id88:
+  city_code: '310010'
+  city_name: 鳥取
+  pref_code: '31'
+  city_kana: トットリ
+  city_romaji: Tottori
+  city_romaji_location: Tottori
+  city_lon: '134.233337'
+  city_lat: '35.5'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id89:
+  city_code: '310020'
+  city_name: 米子
+  pref_code: '31'
+  city_kana: ヨナゴ
+  city_romaji: Yonago
+  city_romaji_location: Yonago
+  city_lon: '133.333328'
+  city_lat: '35.433331'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id90:
+  city_code: '320010'
+  city_name: 松江
+  pref_code: '32'
+  city_kana: マツエ
+  city_romaji: Matsue
+  city_romaji_location: Matsue
+  city_lon: '133.050568'
+  city_lat: '35.472221'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id91:
+  city_code: '320020'
+  city_name: 浜田
+  pref_code: '32'
+  city_kana: ハマダ
+  city_romaji: Hamada
+  city_romaji_location: Hamada
+  city_lon: '132.083328'
+  city_lat: '34.883331'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id92:
+  city_code: '320030'
+  city_name: 西郷
+  pref_code: '32'
+  city_kana: サイゴウ
+  city_romaji: Saigo
+  city_romaji_location: Imazu
+  city_lon: '133.316666'
+  city_lat: '36.166672'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id93:
+  city_code: '330010'
+  city_name: 岡山
+  pref_code: '33'
+  city_kana: オカヤマ
+  city_romaji: Okayama
+  city_romaji_location: Okayama
+  city_lon: '133.934998'
+  city_lat: '34.661671'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id94:
+  city_code: '330020'
+  city_name: 津山
+  pref_code: '33'
+  city_kana: ツヤマ
+  city_romaji: Tsuyama
+  city_romaji_location: Tsuyama
+  city_lon: '134'
+  city_lat: '35.049999'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id95:
+  city_code: '340010'
+  city_name: 広島
+  pref_code: '34'
+  city_kana: ヒロシマ
+  city_romaji: Hiroshima
+  city_romaji_location: Hiroshima
+  city_lon: '132.459366'
+  city_lat: '34.396271'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id96:
+  city_code: '340020'
+  city_name: 庄原
+  pref_code: '34'
+  city_kana: ショウバラ
+  city_romaji: Shobara
+  city_romaji_location: Shōbara
+  city_lon: '133.016663'
+  city_lat: '34.849998'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id97:
+  city_code: '350010'
+  city_name: 下関
+  pref_code: '35'
+  city_kana: シモノセキ
+  city_romaji: Shimonoseki
+  city_romaji_location: Shimonoseki
+  city_lon: '130.949997'
+  city_lat: '33.950001'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id98:
+  city_code: '350020'
+  city_name: 山口
+  pref_code: '35'
+  city_kana: ヤマグチ
+  city_romaji: Yamaguchi
+  city_romaji_location: Yamaguchi
+  city_lon: '131.47139'
+  city_lat: '34.185829'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id99:
+  city_code: '350030'
+  city_name: 柳井
+  pref_code: '35'
+  city_kana: ヤナイ
+  city_romaji: Yanai
+  city_romaji_location: Yanai
+  city_lon: '132.116669'
+  city_lat: '33.966671'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id100:
+  city_code: '350040'
+  city_name: 萩
+  pref_code: '35'
+  city_kana: ハギ
+  city_romaji: Hagi
+  city_romaji_location: Hagi
+  city_lon: '131.416672'
+  city_lat: '34.400002'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id101:
+  city_code: '360010'
+  city_name: 徳島
+  pref_code: '36'
+  city_kana: トクシマ
+  city_romaji: Tokushima
+  city_romaji_location: Tokushima
+  city_lon: '134.559433'
+  city_lat: '34.06583'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id102:
+  city_code: '360020'
+  city_name: 日和佐
+  pref_code: '36'
+  city_kana: ヒワサ
+  city_romaji: Hiwasa
+  city_romaji_location: Mugiura
+  city_lon: '134.416672'
+  city_lat: '33.666672'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id103:
+  city_code: '370000'
+  city_name: 高松
+  pref_code: '37'
+  city_kana: タカマツ
+  city_romaji: Takamatsu
+  city_romaji_location: Takamatsu
+  city_lon: '134.043335'
+  city_lat: '34.340279'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id104:
+  city_code: '380010'
+  city_name: 松山
+  pref_code: '38'
+  city_kana: マツヤマ
+  city_romaji: Matsuyama
+  city_romaji_location: Matsuyama
+  city_lon: '132.765747'
+  city_lat: '33.839161'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id105:
+  city_code: '380020'
+  city_name: 新居浜
+  pref_code: '38'
+  city_kana: ニイハマ
+  city_romaji: Niihama
+  city_romaji_location: Niihama
+  city_lon: '133.316727'
+  city_lat: '33.959332'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id106:
+  city_code: '380030'
+  city_name: 宇和島
+  pref_code: '38'
+  city_kana: ウワジマ
+  city_romaji: Uwajima
+  city_romaji_location: Uwajima
+  city_lon: '132.560013'
+  city_lat: '33.223751'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id107:
+  city_code: '390010'
+  city_name: 高知
+  pref_code: '39'
+  city_kana: コウチ
+  city_romaji: Kochi
+  city_romaji_location: Kochi
+  city_lon: '133.531113'
+  city_lat: '33.559719'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id108:
+  city_code: '390020'
+  city_name: 室戸岬
+  pref_code: '39'
+  city_kana: ムロトミサキ
+  city_romaji: Murotomisaki
+  city_romaji_location: Muroto-misakicho
+  city_lon: '134.149994'
+  city_lat: '33.283329'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id109:
+  city_code: '390030'
+  city_name: 清水
+  pref_code: '39'
+  city_kana: シミズ
+  city_romaji: Shimizu
+  city_romaji_location: Shimizu
+  city_lon: '132.951064'
+  city_lat: '32.776595'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id110:
+  city_code: '400010'
+  city_name: 福岡
+  pref_code: '40'
+  city_kana: フクオカ
+  city_romaji: Fukuoka
+  city_romaji_location: Fukuoka
+  city_lon: '130.41806'
+  city_lat: '33.606392'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id111:
+  city_code: '400020'
+  city_name: 八幡
+  pref_code: '40'
+  city_kana: ヤワタ
+  city_romaji: Yawata
+  city_romaji_location: Yahata
+  city_lon: '130.795387'
+  city_lat: '33.869032'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id112:
+  city_code: '400030'
+  city_name: 飯塚
+  pref_code: '40'
+  city_kana: イイヅカ
+  city_romaji: Iizuka
+  city_romaji_location: Iizuka
+  city_lon: '130.683334'
+  city_lat: '33.633331'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id113:
+  city_code: '400040'
+  city_name: 久留米
+  pref_code: '40'
+  city_kana: クルメ
+  city_romaji: Kurume
+  city_romaji_location: Kurume
+  city_lon: '130.516663'
+  city_lat: '33.316669'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id114:
+  city_code: '410010'
+  city_name: 佐賀
+  pref_code: '41'
+  city_kana: サガ
+  city_romaji: Saga
+  city_romaji_location: Saga
+  city_lon: '130.298798'
+  city_lat: '33.249321'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id115:
+  city_code: '410020'
+  city_name: 伊万里
+  pref_code: '41'
+  city_kana: イマリ
+  city_romaji: Imari
+  city_romaji_location: Imarichō-kō
+  city_lon: '129.883331'
+  city_lat: '33.26667'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id116:
+  city_code: '420010'
+  city_name: 長崎
+  pref_code: '42'
+  city_kana: ナガサキ
+  city_romaji: Nagasaki
+  city_romaji_location: Nagasaki
+  city_lon: '129.873611'
+  city_lat: '32.74472'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id117:
+  city_code: '420020'
+  city_name: 佐世保
+  pref_code: '42'
+  city_kana: サセボ
+  city_romaji: Sasebo
+  city_romaji_location: Sasebo
+  city_lon: '129.722778'
+  city_lat: '33.159168'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id118:
+  city_code: '420030'
+  city_name: 厳原
+  pref_code: '42'
+  city_kana: イズハラ
+  city_romaji: Izuhara
+  city_romaji_location: Izuhara
+  city_lon: '129.287216'
+  city_lat: '34.201389'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id119:
+  city_code: '420040'
+  city_name: 福江
+  pref_code: '42'
+  city_kana: フクエ
+  city_romaji: Fukue
+  city_romaji_location: Fukuechō
+  city_lon: '128.841934'
+  city_lat: '32.688061'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id120:
+  city_code: '430010'
+  city_name: 熊本
+  pref_code: '43'
+  city_kana: クマモト
+  city_romaji: Kumamoto
+  city_romaji_location: Kumamoto
+  city_lon: '130.741669'
+  city_lat: '32.789719'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id121:
+  city_code: '430020'
+  city_name: 阿蘇乙姫
+  pref_code: '43'
+  city_kana: アソツバキ
+  city_romaji: Asotsubaki
+  city_romaji_location: Ichinomiyamachi-sakanashi
+  city_lon: '131.133331'
+  city_lat: '32.933331'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id122:
+  city_code: '430030'
+  city_name: 牛深
+  pref_code: '43'
+  city_kana: ウシブカ
+  city_romaji: Ushibuka
+  city_romaji_location: Ushibukamachi
+  city_lon: '130.022781'
+  city_lat: '32.190559'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id123:
+  city_code: '430040'
+  city_name: 人吉
+  pref_code: '43'
+  city_kana: ヒトヨシ
+  city_romaji: Hitoyoshi
+  city_romaji_location: Hitoyoshi
+  city_lon: '130.75'
+  city_lat: '32.216671'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id124:
+  city_code: '440010'
+  city_name: 大分
+  pref_code: '44'
+  city_kana: ダイブ
+  city_romaji: Daibu
+  city_romaji_location: Ōita
+  city_lon: '131.612503'
+  city_lat: '33.23806'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id125:
+  city_code: '440020'
+  city_name: 中津
+  pref_code: '44'
+  city_kana: ナカツ
+  city_romaji: Nakatsu
+  city_romaji_location: Nakatsu
+  city_lon: '131.188293'
+  city_lat: '33.59811'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id126:
+  city_code: '440030'
+  city_name: 日田
+  pref_code: '44'
+  city_kana: ヒタ
+  city_romaji: Hita
+  city_romaji_location: Hita
+  city_lon: '130.933334'
+  city_lat: '33.316669'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id127:
+  city_code: '440040'
+  city_name: 佐伯
+  pref_code: '44'
+  city_kana: サエキ
+  city_romaji: Saeki
+  city_romaji_location: Saiki
+  city_lon: '131.899994'
+  city_lat: '32.950001'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id128:
+  city_code: '450010'
+  city_name: 宮崎
+  pref_code: '45'
+  city_kana: ミヤザキ
+  city_romaji: Miyazaki
+  city_romaji_location: Miyazaki
+  city_lon: '131.423889'
+  city_lat: '31.91111'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id129:
+  city_code: '450020'
+  city_name: 延岡
+  pref_code: '45'
+  city_kana: ノベオカ
+  city_romaji: Nobeoka
+  city_romaji_location: Nobeoka
+  city_lon: '131.666672'
+  city_lat: '32.583328'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id130:
+  city_code: '450030'
+  city_name: 都城
+  pref_code: '45'
+  city_kana: ミヤコノジョウ
+  city_romaji: Miyakonojo
+  city_romaji_location: Miyakonojō
+  city_lon: '131.066666'
+  city_lat: '31.73333'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id131:
+  city_code: '450040'
+  city_name: 高千穂
+  pref_code: '45'
+  city_kana: タカチホ
+  city_romaji: Takachiho
+  city_romaji_location: Hinokage
+  city_lon: '131.399994'
+  city_lat: '32.650002'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id132:
+  city_code: '460010'
+  city_name: 鹿児島
+  pref_code: '46'
+  city_kana: カゴシマ
+  city_romaji: Kagoshima
+  city_romaji_location: Kagoshima
+  city_lon: '130.558136'
+  city_lat: '31.560181'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id133:
+  city_code: '460020'
+  city_name: 鹿屋
+  pref_code: '46'
+  city_kana: カノヤ
+  city_romaji: Kanoya
+  city_romaji_location: Kanoya
+  city_lon: '130.850006'
+  city_lat: '31.383329'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id134:
+  city_code: '460030'
+  city_name: 種子島
+  pref_code: '46'
+  city_kana: タネガシマ
+  city_romaji: Tanegashima
+  city_romaji_location: Nishinoomote
+  city_lon: '131.000000'
+  city_lat: '30.73333'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id135:
+  city_code: '460040'
+  city_name: 名瀬
+  pref_code: '46'
+  city_kana: ナゼ
+  city_romaji: Naze
+  city_romaji_location: Naze
+  city_lon: '129.483337'
+  city_lat: '28.366671'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id136:
+  city_code: '471010'
+  city_name: 那覇
+  pref_code: '47'
+  city_kana: ナハ
+  city_romaji: Naha
+  city_romaji_location: Naha
+  city_lon: '127.681107'
+  city_lat: '26.2125'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id137:
+  city_code: '471020'
+  city_name: 名護
+  pref_code: '47'
+  city_kana: ナゴ
+  city_romaji: Nago
+  city_romaji_location: Nago
+  city_lon: '127.976112'
+  city_lat: '26.58806'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id138:
+  city_code: '471030'
+  city_name: 久米島
+  pref_code: '47'
+  city_kana: クメジマ
+  city_romaji: Kumejima
+  city_romaji_location: Kumejima
+  city_lon: '126.7711'
+  city_lat: '26.3503'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id139:
+  city_code: '472000'
+  city_name: 南大東
+  pref_code: '47'
+  city_kana: ミナミダイトウ
+  city_romaji: Minamidaito
+  city_romaji_location: Shintō
+  city_lon: '131.259277'
+  city_lat: '25.85195'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id140:
+  city_code: '473000'
+  city_name: 宮古島
+  pref_code: '47'
+  city_kana: ミヤコジマ
+  city_romaji: Miyakojima
+  city_romaji_location: Hirara
+  city_lon: '125.283333'
+  city_lat: '24.799999'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id141:
+  city_code: '474010'
+  city_name: 石垣島
+  pref_code: '47'
+  city_kana: イシガキジマ
+  city_romaji: Ishigakijima
+  city_romaji_location: Ishigaki
+  city_lon: '124.157173'
+  city_lat: '24.34478'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'
+id142:
+  city_code: '474020'
+  city_name: 与那国島
+  pref_code: '47'
+  city_kana: ヨナグニジマ
+  city_romaji: Yonagunijima
+  city_romaji_location: Yonakuni
+  city_lon: '123.000000'
+  city_lat: '24.466669'
+  created_at: '2021-08-12 18:00:00'
+  updated_at: '2021-08-12 18:00:00'

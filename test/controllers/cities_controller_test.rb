@@ -1,38 +1,26 @@
 require "test_helper"
 
 class CitiesControllerTest < ActionDispatch::IntegrationTest
-  setup do
-    @city = cities(:one)
-  end
 
-  test "should get index" do
+  test "should get_city_all" do
     get cities_url, as: :json
+
+    # API戻り値をパース
+    res = JSON.parse(@response.body)
+    # 件数が正しいことを確認
+    assert_equal(res.length, 142)
+
+    # ソート順が正しいことを確認
+    # assert_equal(expected, actual, [msg])
+    assert_equal(res[0]["CityCode"] , "011000")
+    assert_equal(res[45]["CityCode"] , "130010")
+    assert_equal(res[141]["CityCode"], "474020")
+    # 値を確認
+    assert_equal(res[45]["CityName"], "東京")
+    assert_equal(res[45]["CityLon"], 139.691711)
+    assert_equal(res[45]["CityLat"], 35.689499)
+
     assert_response :success
   end
-
-  test "should create city" do
-    assert_difference('City.count') do
-      post cities_url, params: { city: { city_code: @city.city_code, city_kana: @city.city_kana, city_lat: @city.city_lat, city_lon: @city.city_lon, city_name: @city.city_name, city_romaji: @city.city_romaji, city_romaji_location: @city.city_romaji_location, pref_code: @city.pref_code } }, as: :json
-    end
-
-    assert_response 201
-  end
-
-  test "should show city" do
-    get city_url(@city), as: :json
-    assert_response :success
-  end
-
-  test "should update city" do
-    patch city_url(@city), params: { city: { city_code: @city.city_code, city_kana: @city.city_kana, city_lat: @city.city_lat, city_lon: @city.city_lon, city_name: @city.city_name, city_romaji: @city.city_romaji, city_romaji_location: @city.city_romaji_location, pref_code: @city.pref_code } }, as: :json
-    assert_response 200
-  end
-
-  test "should destroy city" do
-    assert_difference('City.count', -1) do
-      delete city_url(@city), as: :json
-    end
-
-    assert_response 204
-  end
+  
 end
