@@ -37,7 +37,9 @@ module TripWeatherBackendRails
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    # タイムゾーンを指定
+    # Railsのタイムゾーンを指定
     config.time_zone = 'Asia/Tokyo'
+    # ActiveRecordのタイムゾーンを指定（UTCではなくlocal(=Tokyo)とする）
+    config.active_record.default_timezone(:local)
   end
 end

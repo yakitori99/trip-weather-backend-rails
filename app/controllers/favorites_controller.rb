@@ -1,6 +1,5 @@
-class FavoritesController < ApplicationController
-  before_action :set_favorite, only: [:show, :update, :destroy]
-
+class FavoritesController < ApplicationController  
+  
   GET_FAVORITES_BY_NICKNAME_SQL = <<-"EOS"
   select
   f.nickname as Nickname, 
@@ -49,51 +48,55 @@ class FavoritesController < ApplicationController
     render json: results
   end
 
-  # GET /favorites
-  def index
-    @favorites = Favorite.all
+  # 受け取ったJSON(nickname, from_city_code, to_city_code)を用いてfavoritesテーブルに対しINSする
+  # (同一レコードが存在する場合は更新日時のみUPD)
+  def post_favorites
+    # params取得
+    nickname = params[:nickname]
+    from_city_code = params[:from_city_code]
+    to_city_code   = params[:to_city_code]
+    
+    # nicknameの空白文字は削除(半角/全角とも)
+    nickname = nickname.gsub(" ", "")
+    nickname = nickname.gsub("　", "")
+    
+    # from_city_code , to_city_codeの片方でもcitiesテーブルに存在しない場合はエラーとする
+    from_exist = City.where("city_code = ?", from_city_code).exists?
+    to_exist = City.where("city_code = ?", to_city_code).exists?
+    if from_exist == false or to_exist == false
+      render status: 400, json: { status:400, message:"Bad Request"} and return
+    end
 
-    render json: @favorites
-  end
+    # DBへの登録時にUTCに変換されてしまう。が、DBの値を日本時間で登録したいため以下を行う
+    # 登録/更新時：now(JST) + 9時間 -> UTCで見たときにnow(JST)と同じ日時が登録される
+    # 参照時：DBの値がJSTなので、そのまま利用する
+    time_now = Time.zone.now + 9.hours
 
-  # GET /favorites/1
-  def show
-    render json: @favorite
-  end
-
-  # POST /favorites
-  def create
-    @favorite = Favorite.new(favorite_params)
-
-    if @favorite.save
-      render json: @favorite, status: :created, location: @favorite
+    # SELECTして同一レコードが存在するかチェック
+    favorite_exist = Favorite.where("nickname = ? AND from_city_code = ? AND to_city_code = ?",
+                                    nickname, from_city_code, to_city_code).exists?
+    
+    if favorite_exist
+      # 同一レコードがあればupdate_atのみUPDATE # 原則更新対象は1レコードのみだが、複数も許容する
+      Favorite.where("nickname = ? AND from_city_code = ? AND to_city_code = ?",
+                     nickname, from_city_code, to_city_code
+                    ).update_all(updated_at: time_now)
+      result_code = FAVORITES_DONE_CODE_UPD
     else
-      render json: @favorite.errors, status: :unprocessable_entity
+      # 同一レコードがなければINSERT
+      Favorite.create(nickname: nickname,
+                      from_pref_code: from_city_code[0..1],
+                      from_city_code: from_city_code,
+                      to_pref_code: to_city_code[0..1],
+                      to_city_code: to_city_code,
+                      created_at: time_now,
+                      updated_at: time_now)
+
+      result_code = FAVORITES_DONE_CODE_INS
     end
+    
+    # statusはCreated, ResultCodeはINS/UPDの判別のために渡す
+    render status: 201, json: {ResultCode:result_code} and return
   end
 
-  # PATCH/PUT /favorites/1
-  def update
-    if @favorite.update(favorite_params)
-      render json: @favorite
-    else
-      render json: @favorite.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /favorites/1
-  def destroy
-    @favorite.destroy
-  end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_favorite
-      @favorite = Favorite.find(params[:id])
-    end
-
-    # Only allow a list of trusted parameters through.
-    def favorite_params
-      params.require(:favorite).permit(:nickname, :from_pref_code, :from_city_code, :to_pref_code, :to_city_code)
-    end
 end
