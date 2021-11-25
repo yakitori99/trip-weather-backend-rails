@@ -1,26 +1,5 @@
 class FavoritesController < ApplicationController  
   
-  GET_FAVORITES_BY_NICKNAME_SQL = <<-"EOS"
-  select
-  f.nickname as Nickname, 
-  f.from_pref_code as FromPrefCode, 
-  f.from_city_code as FromCityCode, 
-  f.to_pref_code   as ToPrefCode,
-  f.to_city_code   as ToCityCode,
-  p1.pref_name as FromPrefName, 
-  c1.city_name as FromCityName, 
-  p2.pref_name as ToPrefName,
-  c2.city_name as ToCityName,
-  f.updated_at as UpdatedAt
-  from favorites f
-  LEFT OUTER JOIN prefs p1 on f.from_pref_code = p1.pref_code
-  LEFT OUTER JOIN prefs p2 on f.to_pref_code = p2.pref_code 
-  LEFT OUTER JOIN cities c1 on f.from_city_code = c1.city_code
-  LEFT OUTER JOIN cities c2 on f.to_city_code = c2.city_code 
-  where f.nickname = (:nickname) 
-  order by f.updated_at desc
-  EOS
-
   # favoritesテーブルから重複しないニックネーム一覧を取得し、ニックネームの昇順で返す
   def get_nicknames
     @favorites = Favorite.select(:nickname).distinct.order('nickname ASC')
@@ -35,11 +14,9 @@ class FavoritesController < ApplicationController
     if nickname == NO_NICKNAME
       nickname = ""
     end
-    
-    # プレースホルダに変数を渡しsqlを生成
-    sql = ActiveRecord::Base.sanitize_sql_array([GET_FAVORITES_BY_NICKNAME_SQL, nickname: nickname])
-    # sqlを実行し、取得結果をarray of hashに変換して代入
-    results = ActiveRecord::Base.connection.select_all(sql).to_a
+
+    # DB検索
+    results = Favorite.select_favorites_by_nickname(nickname)
     # UpdatedAtの日付文字列形式を変換
     results.each_index do |i|
       results[i]["UpdatedAt"] = results[i]["UpdatedAt"].in_time_zone.strftime("%Y/%m/%d %H:%M:%S")
@@ -48,6 +25,7 @@ class FavoritesController < ApplicationController
     render json: results
   end
 
+  
   # 受け取ったJSON(nickname, from_city_code, to_city_code)を用いてfavoritesテーブルに対しINSする
   # (同一レコードが存在する場合は更新日時のみUPD)
   def post_favorites

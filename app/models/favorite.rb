@@ -1,5 +1,35 @@
 class Favorite < ApplicationRecord
   
+  SELECT_FAVORITES_BY_NICKNAME_SQL = <<-"EOS"
+  select
+  f.nickname as Nickname, 
+  f.from_pref_code as FromPrefCode, 
+  f.from_city_code as FromCityCode, 
+  f.to_pref_code   as ToPrefCode,
+  f.to_city_code   as ToCityCode,
+  p1.pref_name as FromPrefName, 
+  c1.city_name as FromCityName, 
+  p2.pref_name as ToPrefName,
+  c2.city_name as ToCityName,
+  f.updated_at as UpdatedAt
+  from favorites f
+  LEFT OUTER JOIN prefs p1 on f.from_pref_code = p1.pref_code
+  LEFT OUTER JOIN prefs p2 on f.to_pref_code = p2.pref_code 
+  LEFT OUTER JOIN cities c1 on f.from_city_code = c1.city_code
+  LEFT OUTER JOIN cities c2 on f.to_city_code = c2.city_code 
+  where f.nickname = (:nickname) 
+  order by f.updated_at desc
+  EOS
+
+  def self.select_favorites_by_nickname(nickname)
+    # プレースホルダに変数を渡しsqlを生成
+    sql = ActiveRecord::Base.sanitize_sql_array([SELECT_FAVORITES_BY_NICKNAME_SQL, nickname: nickname])
+    # sqlを実行し、取得結果をarray of hashに変換して代入
+    results = ActiveRecord::Base.connection.select_all(sql).to_a
+    return results
+  end
+
+  
   # 受け取ったnickname, from_city_code, to_city_codeを用いて
   # favoritesテーブルに対しINSするクラスメソッド
   # (同一レコードが存在する場合は更新日時のみUPD)
