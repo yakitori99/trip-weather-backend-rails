@@ -25,7 +25,7 @@ class FavoritesController < ApplicationController
     render json: results
   end
 
-  
+
   # 受け取ったJSON(nickname, from_city_code, to_city_code)を用いてfavoritesテーブルに対しINSする
   # (同一レコードが存在する場合は更新日時のみUPD)
   def post_favorites
@@ -48,4 +48,9 @@ class FavoritesController < ApplicationController
     end
   end
 
+  private
+  # Only allow a list of trusted parameters through.
+  def favorite_params
+    params.require(:favorite).permit(:nickname, :from_pref_code, :from_city_code, :to_pref_code, :to_city_code)
+  end
 end
