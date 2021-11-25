@@ -57,8 +57,7 @@ class FavoritesController < ApplicationController
     to_city_code   = params[:to_city_code]
     
     # nicknameの空白文字は削除(半角/全角とも)
-    nickname = nickname.gsub(" ", "")
-    nickname = nickname.gsub("　", "")
+    nickname = nickname.delete(" 　")
     
     # DBにINS or UPD
     result_code = Favorite.ins_upd_favorites(nickname, from_city_code, to_city_code)
