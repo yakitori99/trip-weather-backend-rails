@@ -11,7 +11,7 @@ class FavoritesController < ApplicationController
   def get_favorites_by_nickname
     nickname = params[:nickname]
     # ニックネームなしを表す文字列の場合、空文字を代入
-    if nickname == NO_NICKNAME
+    if nickname == Constants::NO_NICKNAME
       nickname = ""
     end
 
@@ -40,7 +40,7 @@ class FavoritesController < ApplicationController
     # DBにINS or UPD
     result_code = Favorite.ins_upd_favorites(nickname, from_city_code, to_city_code)
     
-    if result_code == FAVORITES_DONE_CODE_ERR
+    if result_code == Constants::FAVORITES_DONE_CODE_ERR
       render status: 400, json: { status:400, message:"Bad Request"} and return
     else
       # statusはCreated, ResultCodeはINS/UPDの判別のために渡す

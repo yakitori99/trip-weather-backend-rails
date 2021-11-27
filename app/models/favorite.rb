@@ -29,7 +29,7 @@ class Favorite < ApplicationRecord
     return results
   end
 
-  
+
   # 受け取ったnickname, from_city_code, to_city_codeを用いて
   # favoritesテーブルに対しINSするクラスメソッド
   # (同一レコードが存在する場合は更新日時のみUPD)
@@ -38,7 +38,7 @@ class Favorite < ApplicationRecord
     from_exist = City.where("city_code = ?", from_city_code).exists?
     to_exist = City.where("city_code = ?", to_city_code).exists?
     if from_exist == false or to_exist == false
-      result_code = FAVORITES_DONE_CODE_ERR
+      result_code = Constants::FAVORITES_DONE_CODE_ERR
       return result_code
     end
 
@@ -56,7 +56,7 @@ class Favorite < ApplicationRecord
       Favorite.where("nickname = ? AND from_city_code = ? AND to_city_code = ?",
                      nickname, from_city_code, to_city_code
                     ).update_all(updated_at: time_now)
-      result_code = FAVORITES_DONE_CODE_UPD
+      result_code = Constants::FAVORITES_DONE_CODE_UPD
     else
       # 同一レコードがなければINSERT
       Favorite.create(nickname: nickname,
@@ -67,7 +67,7 @@ class Favorite < ApplicationRecord
                       created_at: time_now,
                       updated_at: time_now)
 
-      result_code = FAVORITES_DONE_CODE_INS
+      result_code = Constants::FAVORITES_DONE_CODE_INS
     end
 
     return result_code
