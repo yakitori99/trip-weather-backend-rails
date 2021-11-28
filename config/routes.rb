@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     get '/favorites/by/:nickname' => 'favorites#get_favorites_by_nickname'
     post 'favorites' => 'favorites#post_favorites'
     
+    get '/weather_to/:city_code' => 'weather#get_weather_to_by_citycode'
+
   end
 end
