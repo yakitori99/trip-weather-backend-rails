@@ -9,11 +9,11 @@ module Constants
   FAVORITES_DONE_CODE_UPD = 2
 
   ## Weather関連定数
-	# 9-23時
-	WEATHER_CHECK_LENGTH = 15
-	# 普通の曇り
-	WEATHER_CODE_CLOUDS = 803
-  
+  # 9-23時
+  WEATHER_CHECK_LENGTH = 15
+  # 普通の曇り
+  WEATHER_CODE_CLOUDS = 803
+
   # hourlyからdailyのweather_codeを判定するための配列
   # weatherCode と 判定するしきい値のセット。hourlyのweather_codeを上から順に評価し、条件を満たしたらそこで終了
   # 以下のチェック用コードが1桁の場合、例えば条件が5なら、codeが5XXのいずれでも条件を満たすとみなす
