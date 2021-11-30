@@ -108,6 +108,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5-x64-mingw32)
       racc (~> 1.4)
+    parallel (1.21.0)
     puma (5.5.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -169,6 +170,7 @@ DEPENDENCIES
   faraday
   faraday_middleware
   jbuilder (~> 2.7)
+  parallel
   puma (~> 5.0)
   rails (~> 6.1.4, >= 6.1.4.1)
   sqlite3 (~> 1.4)
