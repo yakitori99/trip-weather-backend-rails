@@ -5,7 +5,9 @@
 現在地・目的地をお気に入りに登録しておくことで、次回以降は簡単に天気予報を確認することができます。
 ![利用イメージ2](image/TripWeather_利用イメージ2.png)
 レスポンシブ対応のため、スマホ/PCどちらからでも利用可能です。
+<img src="image/TripWeather_利用イメージ3.jpg" alt="利用イメージ3" width="350">
 <br>
+
 
 ## サイトURL
 https://trip-weather-frontend.herokuapp.com/
@@ -13,7 +15,7 @@ https://trip-weather-frontend.herokuapp.com/
 
 ## 構成図
 このリポジトリは以下赤枠部分のコードを含みます。
-![構成図(Go)](image/TripWeather構成図_Rails.png) 
+![構成図(Rails)](image/TripWeather構成図_Rails.png) 
 
 関連するリポジトリは以下の3つです。
 - フロントエンド（Vue.js）  
