@@ -22,7 +22,7 @@ https://trip-weather-frontend.herokuapp.com/
 - バックエンド①（Go+Echo版。機能はRails版と同様）  
   https://github.com/yakitori99/trip-weather-backend
 
-- バックエンド②（Rails版。このリポジトリ）  
+- **バックエンド②（Rails版。このリポジトリ）**  
   https://github.com/yakitori99/trip-weather-backend-rails
 
 ## 主な使用技術（アプリケーション全体）
@@ -90,8 +90,9 @@ https://trip-weather-frontend.herokuapp.com/
 - 高速化のため、2つ以上のAPIを呼び出すときは並行処理とした
   - parallelというライブラリを利用
 - テストコードを用いて、単体テスト・APIテストを自動化した
+  - minitestを利用
 
-## やっていないこと（バックエンド：Go+Echo）
+## やっていないこと（バックエンド：Rails）
 - ログイン機能はなし
   - 天気を見るだけのアプリでユーザ登録をさせたくないので
 - WebAPIの機能として、基本的に入力値のチェックなし
