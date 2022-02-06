@@ -2,16 +2,16 @@ class Favorite < ApplicationRecord
   
   SELECT_FAVORITES_BY_NICKNAME_SQL = <<-"EOS"
   select
-  f.nickname as Nickname, 
-  f.from_pref_code as FromPrefCode, 
-  f.from_city_code as FromCityCode, 
-  f.to_pref_code   as ToPrefCode,
-  f.to_city_code   as ToCityCode,
-  p1.pref_name as FromPrefName, 
-  c1.city_name as FromCityName, 
-  p2.pref_name as ToPrefName,
-  c2.city_name as ToCityName,
-  f.updated_at as UpdatedAt
+  f.nickname as "Nickname", 
+  f.from_pref_code as "FromPrefCode", 
+  f.from_city_code as "FromCityCode", 
+  f.to_pref_code   as "ToPrefCode",
+  f.to_city_code   as "ToCityCode",
+  p1.pref_name as "FromPrefName", 
+  c1.city_name as "FromCityName", 
+  p2.pref_name as "ToPrefName",
+  c2.city_name as "ToCityName",
+  f.updated_at as "UpdatedAt"
   from favorites f
   LEFT OUTER JOIN prefs p1 on f.from_pref_code = p1.pref_code
   LEFT OUTER JOIN prefs p2 on f.to_pref_code = p2.pref_code 

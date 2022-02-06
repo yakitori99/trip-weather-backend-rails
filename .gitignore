@@ -32,3 +32,6 @@
 
 # 秘密情報を記載するconfig
 /config/initializers/private_config.rb
+
+# db接続文字列を含むファイルをignoreする
+/config/database.yml

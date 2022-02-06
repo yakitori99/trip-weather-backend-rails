@@ -43,3 +43,6 @@ gem 'faraday_middleware'
 
 # for parallel processing
 gem 'parallel'
+
+# for postgres
+gem 'pg'
