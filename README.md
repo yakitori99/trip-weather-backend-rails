@@ -10,7 +10,8 @@
 
 
 ## サイトURL
-https://trip-weather-frontend.herokuapp.com/
+https://trip-weather-frontend.herokuapp.com/  
+(現在は停止中です)
 <br>
 
 ## 構成図
